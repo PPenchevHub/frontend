@@ -98,9 +98,7 @@ function App() {
 			<h1 style={{ textAlign: "center", color: '#3f51b5' }}>Kato ne raboti messenger</h1>
 		<div className="container">
 			<div className="video-container">
-				<div className="video">
-					{stream &&  <video playsInline muted ref={myVideo} autoPlay style={{ width: "100%" }} />}
-				</div>
+				
 				<div className="video">
 					{callAccepted && !callEnded ?
 					<video playsInline ref={userVideo} autoPlay style={{ width: "100%"}} />:
