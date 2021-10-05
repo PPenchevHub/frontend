@@ -47,7 +47,22 @@ function App() {
 		const peer = new Peer({
 			initiator: true,
 			trickle: false,
-			stream: stream
+			stream: stream,
+			  config: {
+
+        iceServers: [
+            {
+                urls: "stun:numb.viagenie.ca",
+                username: "ppenchev73@gmail.com",
+                credential: "123456аа"
+            },
+            {
+                urls: "turn:numb.viagenie.ca",
+                username: "ppenchev73@gmail.com",
+                credential: "123456аа"
+            }
+        ]
+    },
 		})
 		peer.on("signal", (data) => {
 			socket.emit("callUser", {
