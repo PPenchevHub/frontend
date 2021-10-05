@@ -43,7 +43,7 @@ function App() {
 		})
 	}, [])
 
-	const callUser = ("0000") => {
+	const callUser = (id) => {
 		const peer = new Peer({
 			initiator: true,
 			trickle: false,
