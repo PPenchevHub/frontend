@@ -32,7 +32,7 @@ function App() {
 		})
 
 	socket.on("me", (id) => {
-			setMe(id)
+			setMe("0000")
 		})
 
 		socket.on("callUser", (data) => {
